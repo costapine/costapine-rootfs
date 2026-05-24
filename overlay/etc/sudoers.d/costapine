@@ -1,0 +1,2 @@
+# Allow wheel group members to use sudo
+%wheel ALL=(ALL:ALL) ALL

@@ -1,0 +1,2 @@
+# Costapine Linux - USB Automount
+ACTION=="add", SUBSYSTEM=="block", ENV{ID_FS_USAGE}=="filesystem", RUN+="/usr/bin/udisksctl mount -b %N --no-user-interaction"

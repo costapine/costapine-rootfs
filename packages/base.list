@@ -1,0 +1,21 @@
+# Costapine Linux - Base System Packages
+# These form the minimal bootable system
+alpine-base
+busybox
+openrc
+musl
+apk-tools
+alpine-keys
+sudo
+doas
+shadow
+util-linux
+coreutils
+grep
+sed
+findutils
+bash
+curl
+wget
+ca-certificates
+tzdata

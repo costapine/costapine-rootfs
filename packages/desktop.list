@@ -1,0 +1,12 @@
+# Costapine Linux - Desktop Environment
+jwm
+sddm
+dbus
+elogind
+linux-pam
+polkit-elogind
+picom
+feh
+dunst
+xdg-utils
+xdg-user-dirs

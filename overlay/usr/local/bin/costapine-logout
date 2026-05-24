@@ -1,0 +1,8 @@
+#!/bin/sh
+# Costapine Linux - Logout Helper
+case "$1" in
+  logout)   pkill -u "$USER" ;;
+  reboot)   doas /sbin/reboot ;;
+  shutdown) doas /sbin/poweroff ;;
+  *)        echo "Usage: costapine-logout {logout|reboot|shutdown}" ;;
+esac

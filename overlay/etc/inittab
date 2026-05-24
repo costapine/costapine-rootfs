@@ -1,0 +1,11 @@
+# Costapine Linux - Minimal inittab
+::sysinit:/sbin/openrc sysinit
+::sysinit:/sbin/openrc boot
+::wait:/sbin/openrc default
+
+# Two TTYs only (minimal)
+tty1::respawn:/sbin/getty 38400 tty1
+tty2::respawn:/sbin/getty 38400 tty2
+
+::shutdown:/sbin/openrc shutdown
+::ctrlaltdel:/sbin/reboot

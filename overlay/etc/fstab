@@ -1,0 +1,7 @@
+# Costapine Linux - Filesystem Table
+# <device>  <mount>  <type>  <options>  <dump>  <pass>
+proc        /proc    proc    nosuid,nodev,noexec  0  0
+sysfs       /sys     sysfs   nosuid,nodev,noexec  0  0
+devpts      /dev/pts devpts  nosuid,noexec        0  0
+tmpfs       /tmp     tmpfs   nosuid,nodev,size=512M  0  0
+tmpfs       /run     tmpfs   nosuid,nodev,mode=755   0  0

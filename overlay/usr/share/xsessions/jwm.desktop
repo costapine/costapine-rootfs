@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=JWM (Costapine)
+Comment=Costapine Desktop powered by JWM
+Exec=/usr/bin/jwm
+Type=Application
+DesktopNames=JWM

@@ -1,0 +1,6 @@
+# Costapine Linux - Network Packages
+networkmanager
+networkmanager-wifi
+networkmanager-tui
+wpa_supplicant
+dhcpcd

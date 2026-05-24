@@ -1,0 +1,6 @@
+# Costapine Linux - Audio Stack (PipeWire)
+pipewire
+pipewire-pulse
+wireplumber
+alsa-utils
+alsa-lib

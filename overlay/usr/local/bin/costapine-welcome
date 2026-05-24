@@ -1,0 +1,13 @@
+#!/bin/sh
+# Costapine Linux - Welcome Script
+echo ""
+echo "  ╔═══════════════════════════════════════════╗"
+echo "  ║         Welcome to Costapine Linux        ║"
+echo "  ║     Lightweight • Modern • Efficient      ║"
+echo "  ╚═══════════════════════════════════════════╝"
+echo ""
+echo "  Quick tips:"
+echo "  • Super+T  → Terminal"
+echo "  • Super+E  → File Manager"
+echo "  • Super+D  → Application Launcher"
+echo ""
