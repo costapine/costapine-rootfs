@@ -1,0 +1,32 @@
+#!/sbin/openrc-run
+
+description="Costapine Linux first-boot initialization service"
+
+depend() {
+    need localmount
+    after udev
+}
+
+start() {
+    ebegin "Initializing Costapine Linux"
+    
+    # Generate machine-id if missing
+    if [ ! -f /etc/machine-id ]; then
+        dbus-uuidgen --ensure=/etc/machine-id
+    fi
+    
+    # Restore iptables firewall rules if present
+    if [ -f /etc/iptables/rules-save ]; then
+        iptables-restore < /etc/iptables/rules-save 2>/dev/null || true
+    fi
+
+    # Adjust default ALSA mixer levels (unmute master/speaker/headphone)
+    if command -v amixer >/dev/null 2>&1; then
+        amixer sset Master unmute 2>/dev/null || true
+        amixer sset Master 80% 2>/dev/null || true
+        amixer sset Speaker unmute 2>/dev/null || true
+        amixer sset Headphone unmute 2>/dev/null || true
+    fi
+
+    eend 0
+}

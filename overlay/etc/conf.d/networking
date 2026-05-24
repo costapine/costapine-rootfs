@@ -1,0 +1,6 @@
+# /etc/conf.d/networking
+# Configuration for networking interfaces.
+
+# For NetworkManager-based systems, standard interfaces are managed automatically.
+# Set to YES if you want to skip configuring interfaces listed in /etc/network/interfaces.
+ifup_skip="YES"

@@ -1,0 +1,16 @@
+#!/bin/sh
+# Costapine Linux - Startup Optimizations
+
+# Set hard drive power management/performance settings if hdparm is installed
+if command -v hdparm >/dev/null 2>&1; then
+    for dev in /dev/sd[a-z]; do
+        if [ -b "$dev" ]; then
+            hdparm -B 254 "$dev" >/dev/null 2>&1 || true
+        fi
+    done
+fi
+
+# Ensure network interfaces are up and scanning
+if command -v nmcli >/dev/null 2>&1; then
+    nmcli radio wifi on >/dev/null 2>&1 || true
+fi
