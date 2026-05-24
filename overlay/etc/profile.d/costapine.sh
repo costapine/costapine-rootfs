@@ -3,7 +3,7 @@
 export EDITOR=mousepad
 export VISUAL=mousepad
 export PAGER=less
-export BROWSER=netsurf
+export BROWSER=badwolf
 
 alias ll='ls -lah --color=auto'
 alias la='ls -A --color=auto'

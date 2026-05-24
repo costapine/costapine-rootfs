@@ -1,6 +1,11 @@
 # Costapine Linux - Hardware Firmware
 linux-lts
 linux-firmware-none
-linux-firmware-wifi
+linux-firmware-rtlwifi
+linux-firmware-rtw88
+linux-firmware-rtw89
+linux-firmware-ath10k
+linux-firmware-intel
+linux-firmware-brcm
 linux-firmware-i915
 linux-firmware-other
