@@ -1,12 +1,19 @@
 # Costapine Linux - Desktop Environment
-jwm
+openbox
+obconf
+polybar
+rofi
 sddm
 dbus
 elogind
 linux-pam
 polkit-elogind
 picom
-feh
+nitrogen
 dunst
+lxappearance
+papirus-icon-theme
+font-noto
+font-jetbrains-mono-nerd
 xdg-utils
 xdg-user-dirs

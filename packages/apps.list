@@ -1,6 +1,9 @@
 # Costapine Linux - User Applications
-lxterminal
-pcmanfm
+alacritty
+thunar
+thunar-volman
+playerctl
+pavucontrol
 mousepad
 badwolf
 scrot
