@@ -1,6 +1,6 @@
 # Costapine Linux - Desktop Environment
 openbox
-obconf
+obconf-qt
 polybar
 rofi
 sddm
@@ -9,9 +9,8 @@ elogind
 linux-pam
 polkit-elogind
 picom
-nitrogen
+feh
 dunst
-lxappearance
 papirus-icon-theme
 font-noto
 font-jetbrains-mono-nerd
